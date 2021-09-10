@@ -67,7 +67,7 @@
 
 **ps:**
 
-还可以通过修改元数据，具体：每次执行完sql，调用一个rpc接口，更新当前表在hive中的元数据，或者，每晚定时整理相关表（analyze），就可以实现从hive元数据获取文件大小（分区表除外）
+还可以通过修改元数据，具体：每次执行完sql，调用一个rpc接口，更新当前表在hive中的元数据，或者，每晚定时整理相关表（analyze），就可以实现从hive元数据获取文件大小（不在hdfs上存储的外表除外）
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/4d8e015409b74a82b71b9423a80cac0e.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5pyJ5qKm5oOz55qE5Lq65LiN552h6KeJMTIx,size_17,color_FFFFFF,t_70,g_se,x_16)
 
